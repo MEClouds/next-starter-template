@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# My Next.js Starter Template
 
-## Getting Started
+This repository contains different versions of a Next.js starter template, each with specific configurations to help you kickstart your project.
 
-First, run the development server:
+## Available Versions
+
+1. **intl**: Includes Next.js with Tailwind CSS and `next-intl` for localization.
+2. **intl-clerk**: Adds Clerk for authentication on top of the `intl` version.
+3. **intl-clerk-shadcn**: Adds `shadcn-ui` for UI components on top of the `intl-clerk` version.
+
+## Quick Start
+
+You can create a new Next.js project using one of these templates with a single `npx` command, without needing to clone this repository. Follow the instructions below for each version.
+
+### 1. **intl** (Next.js + Tailwind CSS + next-intl)
+
+To create a project using the `intl` version:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npx create-next-app@latest --example https://github.com/MEClouds/next-starter-template#intl my-app
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Replace `my-app` with your desired project name.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 2. **intl-clerk** (Next.js + Tailwind CSS + next-intl + Clerk)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+To create a project using the `intl-clerk` version:
 
-## Learn More
+```bash
+npx create-next-app@latest --example https://github.com/MEClouds/next-starter-template#intl-clerk my-app
+```
 
-To learn more about Next.js, take a look at the following resources:
+Replace `my-app` with your desired project name.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 3. **intl-clerk-shadcn** (Next.js + Tailwind CSS + next-intl + Clerk + shadcn-ui)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+To create a project using the `intl-clerk-shadcn` version:
 
-## Deploy on Vercel
+```bash
+npx create-next-app@latest --example https://github.com/MEClouds/next-starter-template#intl-clerk-shadcn my-app
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Replace `my-app` with your desired project name.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Detailed Setup Instructions
+
+Each command above will create a new Next.js project in a directory called `my-app`, with the selected configuration:
+
+1. **Navigate to your project directory:**
+
+   ```bash
+   cd my-app
+   ```
+
+2. **Install dependencies (if not done automatically):**
+
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+
+   ```bash
+   npm run dev
+   ```
+
+4. **Open your browser and visit:**
+   ```
+   http://localhost:3000
+   ```
+
+You should now have a fully configured Next.js project based on the selected template, ready for development.
+
+## Customization
+
+After setting up your project, you can further customize it by adding components, pages, or modifying configurations to suit your needs.
+
+## Contributing
+
+If you have suggestions or improvements, feel free to open an issue or submit a pull request. Contributions are welcome!
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
